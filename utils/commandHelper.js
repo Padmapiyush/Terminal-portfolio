@@ -20,12 +20,8 @@ const COMMANDS = [
     description: "Contact Me",
   },
   {
-    command: "blog",
-    description: "Visit my blog",
-  },
-  {
-    command: "youtube",
-    description: "Visit my youtube channel (@livecode247)",
+    command: "resume",
+    description: "View My Resume",
   },
   {
     command:
@@ -76,7 +72,7 @@ export const CONTENTS = {
       <div class="command">Type one of the above to view. For eg. <span style="color: var(--secondary)">about</span></div>`,
   about: () => `My name is Padmapiyush. I am ${getAge(
     "January 28, 2001"
-  )} and I\'m a Tech Enthusiast and a Full Stack Developer loves to play with data.
+  )} and I\'m a Tech Enthusiast and a Software Developer, loving to play with data.
     <br/><br/>
     Exploring the realms of curiosity and constant enthusiasm, I'm a perpetual student who spends the majority of my time crafting intricate code, particularly in the captivating realm of JavaScript. Join me on this coding adventure, and let's bring our ideas to life together!
     <br /><br />
@@ -93,9 +89,9 @@ export const CONTENTS = {
     <br /> BCA, 2022 <br /> <a href="https://www.iul.ac.in/" target="_blank">Integral University, Lucknow</a>.`,
   skills: () => `
   I am experienced with Java, Python and the web technologies dominating at the time: <br />
-  <div class="skill"><b>core</b>: JavaScript, Java, Python<br /></div>
-  <div class="skill"><b>frameworks</b>: React, , Django, Express and <br /></div>
-  <div class="skill"><b>database</b>: MongoDB, PostgreSQL, MySQL, and SQLite<br /></div>.
+  <div class="skill"><b>core</b>: JavaScript, Java, Python, Linux, Git, SQL<br /></div>
+  <div class="skill"><b>frameworks</b>: React, Express, Tableau, Google Cloud Platform, Android<br /></div>
+  <div class="skill"><b>database</b>: MongoDB, PostgreSQL, MySQL <br /></div>.
 <br /><br />
   I also have experience with Android Development.
   `,
@@ -103,7 +99,7 @@ export const CONTENTS = {
   contact: getContacts,
   error: (input) =>
     `<div class="help-command">sh: Unknown command: ${input}</div><div class="help-command">See \`help\` for info`,
-  Resume: () => {
+  resume: () => {
     window.open("https://drive.google.com/file/d/1Z2nUAIa6JmOROGqtCVFYlBCnH31JqW-_/view?usp=sharing", "_blank");
     return "";
   },
